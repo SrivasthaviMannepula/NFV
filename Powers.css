@@ -1,0 +1,75 @@
+/* Powers.css */
+
+.powers-container {
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://th.bing.com/th/id/OIP.uKiSvCRI5JKCrMGxfZ6MwwHaEK?pid=ImgDet&rs=1');
+  background-size: 400% 100%;
+  animation: gradient 10s linear infinite; /* Slower transition */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.powers-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to create two rows */
+  justify-content: center;
+}
+
+.power-card {
+  width: 30%; /* Distribute in two rows with three descriptions each */
+  margin: 10px;
+  text-align: center;
+}
+
+.power-text {
+  font-size: 20px; /* Increase the text size */
+  color: greenyellow;
+}
+
+.power-card img {
+  width: 100%; /* Make the image fit the card */
+}
+
+.powers-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to create two rows */
+  justify-content: center;
+}
+
+
+.power-card {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.power-text {
+  font-size: 30px; /* Increase the text size and add 'px' */
+  color: rgb(152, 21, 21)3c3;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1; /* Ensure text is above the image */
+}
+
+.power-card img {
+  width: 100%;
+  opacity: 0.8; /* Adjust opacity as needed (0.6 means 60% opacity) */
+}

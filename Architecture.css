@@ -1,0 +1,20 @@
+/* Architecture.css */
+
+.architecture-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #222; /* Replace with your desired background color */
+}
+
+.architecture-content {
+  text-align: center;
+  width: 450px;
+  height:450px;
+}
+
+.centered-image {
+  max-width: 550%; /* Increase the max width to make the image larger */
+  max-height: 350vh; /* Increase the max height to make the image larger */
+}

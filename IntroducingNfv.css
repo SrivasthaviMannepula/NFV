@@ -1,0 +1,51 @@
+/* Add black background to the entire container */
+.introducing-nfv-container {
+  padding-top: 40px; /* Adjusted the padding for the title */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://th.bing.com/th/id/OIP.uKiSvCRI5JKCrMGxfZ6MwwHaEK?pid=ImgDet&rs=1');
+  background-size: 400% 100%;
+  animation: gradient 10s linear infinite; /* Slower transition */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+
+/* Style the carousel container */
+.carousel {
+  background: #000;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Style individual carousel items (cards) */
+.carousel .slide {
+  background: #000;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Style the image in each card */
+.carousel .slide img {
+  max-height: 450px; /* Adjust the image height as needed */
+  max-width: 80%;
+  border-radius: 15px; /* Add rounded corners */
+}
+
+/* Style the caption text */
+.carousel .slide .legend {
+  font-size: 24px; /* Adjust the caption text size */
+  font-weight: bold; /* Make the caption text bold */
+}

@@ -1,0 +1,72 @@
+.nfv-building-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #000, #000, #333, #000, #000);
+    background-size: 400% 100%;
+    animation: gradient 5s linear infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .flashcard {
+    width: 400px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flashcard h4 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .flashcard-content {
+    margin: 10px 0;
+  }
+  
+  .flashcard-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .speaker-notes {
+    width: 80%;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    margin: 20px;
+  }
+  
+  .speaker-notes p {
+    margin: 0;
+    font-style: italic;
+  }
+  
+  h2, h3 {
+    color: #fff;
+    text-align: center;
+  }
+  

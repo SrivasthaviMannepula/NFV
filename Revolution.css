@@ -1,0 +1,92 @@
+/* Revolution.css */
+.complete{
+  padding-top: 40px; /* Adjusted the padding for the title */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://th.bing.com/th/id/OIP.uKiSvCRI5JKCrMGxfZ6MwwHaEK?pid=ImgDet&rs=1');
+  background-size: 400% 100%;
+  animation: gradient 10s linear infinite; /* Slower transition */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.revolution-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 30px;
+  background: #222;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 10px 20px darkblue;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 40px;
+  height: 60%;
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden; /* To make the circular image */
+  
+}
+
+.before, .after {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+.before {
+  background: #333;
+}
+
+.after {
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.after.show {
+  opacity: 1;
+}
+
+.animated-image {
+  animation: bounceAndFloat 2s infinite;
+  height: 450px;
+  width: 450px;
+}
+
+@keyframes bounceAndFloat {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  25% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  50% {
+    transform: translateY(0) scale(1);
+  }
+  75% {
+    transform: translateY(-20px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}

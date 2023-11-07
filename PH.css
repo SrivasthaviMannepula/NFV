@@ -1,0 +1,52 @@
+/* PH.css */
+
+.ph-container {
+    padding-top: 40px; /* Adjusted the padding for the title */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://th.bing.com/th/id/OIP.uKiSvCRI5JKCrMGxfZ6MwwHaEK?pid=ImgDet&rs=1');
+    background-size: 400% 100%;
+    animation: gradient 10s linear infinite; /* Slower transition */
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+  
+  
+  
+  .image-container {
+    box-shadow: 10px 10px 10px blue; /* Blue shadow */
+    border-radius: 15px; /* Rounded corners */
+  }
+  
+  .rounded-image {
+    width: 450px; /* Adjust the image size as needed */
+    height: 450px;
+    border-radius: 15px; /* Rounded corners */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .box {
+    background: black; /* Black background */
+    color: white;
+    padding: 10px;
+    border-radius: 15px; /* Rounded corners */
+    /* height: ; */
+  }
+  
+  .text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
